@@ -16,7 +16,7 @@ fetch(filePath)
     window.URL.revokeObjectURL(url);
     document.body.removeChild(a);
 
-    // alert("ダウンロードが完了しました。");
+    alert("ダウンロードが完了しました。");
     window.open("about:blank", "_self").close();
   })
   .catch((error) => console.error("Download failed:", error));
